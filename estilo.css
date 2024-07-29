@@ -1,0 +1,12 @@
+@import url("./estilos/header.css");
+
+:root{
+    --cor-de-fundo: #cecece;
+    --cor-da-fonte: #ffffff;
+    --cor-fonte-titulos:#12372A;
+    --cor-de-fundo-cabecalho:#12372A;
+}
+
+body{
+    background-color: var(--cor-de-fundo);
+}
