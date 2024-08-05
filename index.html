@@ -3,21 +3,87 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projeto Agrinho</title>
-    <link rel="stylesheet" href="./reset.css">
-    <link rel="stylesheet" href="./estilo.css">
+    <title>Energia Renovável</title>
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/estilo.css">
+    <!-- Incluindo biblioteca externa para slider, por exemplo Slick Carousel -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css">
 </head>
 <body>
     <header class="cabecalho">
         <span class="cabecalho--menu"></span>
-        <img src="./img/logo.png" alt="">
-        <img src="./img/home.png" alt="">
+        <img src="img/logo.png" alt="Logo Energia Renovável">
+        <img src="img/home.png" alt="Ícone Home">
     </header>
+
+    <main>
+        <!-- Conteúdo principal do site -->
+        <section class="hero">
+            <div class="container">
+                <h1>Bem-vindo ao nosso site sobre Energia Renovável</h1>
+                <p>Descubra como podemos ajudar a construir um futuro mais sustentável.</p>
+            </div>
+        </section>
+
+        <section class="servicos" id="servicos">
+            <div class="container">
+                <h2>Nossos Serviços</h2>
+                <ul>
+                    <li>Energia Solar</li>
+                    <li>Energia Eólica</li>
+                    <li>Energia Hidrelétrica</li>
+                    <li>Biomassa</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="carousel">
+            <div class="container">
+                <h2>Projetos de Energia Renovável</h2>
+                <div class="slick-carousel">
+                    <div><img src="img/solar.jpeg" alt="Projeto de Energia Solar"></div>
+                    <div><img src="img/wind.png" alt="Projeto de Energia Eólica"></div>
+                    <div><img src="img/hydro.png" alt="Projeto de Energia Hidrelétrica"></div>
+                    <div><img src="img/biomassa.jpeg" alt="Projeto de Biomassa"></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="contato">
+            <div class="container">
+                <h2>Entre em Contato</h2>
+                <form action="#">
+                    <input type="text" name="nome" placeholder="Seu Nome" required>
+                    <input type="email" name="email" placeholder="Seu Email" required>
+                    <textarea name="mensagem" rows="4" placeholder="Sua Mensagem"></textarea>
+                    <input type="submit" value="Enviar">
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Energia Renovável. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- Incluindo jQuery e Slick Carousel -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.slick-carousel').slick({
+                autoplay: true,
+                autoplaySpeed: 2000,
+                arrows: true,
+                dots: true,
+                infinite: true,
+                speed: 500,
+                slidesToShow: 1,
+                slidesToScroll: 1
+            });
+        });
+    </script>
 </body>
 </html>
-
-
-
-
-
-
