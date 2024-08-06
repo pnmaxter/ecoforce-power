@@ -24,6 +24,7 @@ body {
     --cor-fonte-titulos:#12372A;
     --cor-de-fundo-cabecalho:#12372A;
 }
+
 /* Cabeçalho */
 header.cabecalho {
     background-color: #12372A; /* Cor de fundo do cabeçalho */
