@@ -1,7 +1,5 @@
-/* Reset CSS */
-/* Se houver um reset CSS personalizado, coloque-o aqui */
+@import url("./estilos/header.css");
 
-/* Estilos gerais */
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
