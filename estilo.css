@@ -89,7 +89,7 @@ header.cabecalho .cabecalho--menu {
 
 /* Carousel Section */
 .carousel {
-    margin: 40px auto;
+    margin: auto;
     max-width: 600px;
 }
 
